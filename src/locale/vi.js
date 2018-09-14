@@ -1,2 +1,2 @@
-import locale from 'date-fns/locale/vi';
+import locale from 'date-fns2/locale/vi';
 export default locale;

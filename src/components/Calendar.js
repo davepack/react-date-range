@@ -23,9 +23,11 @@ import {
   differenceInDays,
   min,
   max,
-} from 'date-fns';
-import defaultLocale from 'date-fns/locale/en-US';
+} from 'date-fns2';
+import defaultLocale from 'date-fns2/locale/en-US';
 import coreStyles from '../styles';
+
+console.log(defaultLocale);
 
 class Calendar extends PureComponent {
   constructor(props, context) {

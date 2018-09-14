@@ -1,2 +1,2 @@
-import locale from 'date-fns/locale/ru';
+import locale from 'date-fns2/locale/ru';
 export default locale;

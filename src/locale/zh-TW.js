@@ -1,2 +1,2 @@
-import locale from 'date-fns/locale/zh-TW';
+import locale from 'date-fns2/locale/zh-TW';
 export default locale;

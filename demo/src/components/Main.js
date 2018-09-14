@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Calendar, DateRange, DateRangePicker, DefinedRange } from '../../../src';
 import * as rdrLocales from '../../../src/locale';
-import { format, addDays } from 'date-fns';
+import { format, addDays } from 'date-fns2';
 import Section from './Section';
 
 const nameMapper = {

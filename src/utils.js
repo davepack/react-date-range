@@ -6,7 +6,7 @@ import {
   endOfMonth,
   startOfWeek,
   endOfWeek,
-} from 'date-fns';
+} from 'date-fns2';
 
 export function calcFocusDate(currentFocusedDate, props) {
   const { shownDate, date, months, ranges, focusedRange, displayMode } = props;

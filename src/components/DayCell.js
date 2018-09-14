@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { startOfDay, format, isSameDay, isAfter, isBefore, endOfDay } from 'date-fns';
+import { startOfDay, format, isSameDay, isAfter, isBefore, endOfDay } from 'date-fns2';
 
 class DayCell extends Component {
   constructor(props, context) {

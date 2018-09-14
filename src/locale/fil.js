@@ -1,2 +1,2 @@
-import locale from 'date-fns/locale/fil';
+import locale from 'date-fns2/locale/fil';
 export default locale;
