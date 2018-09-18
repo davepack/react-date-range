@@ -536,6 +536,7 @@ Calendar.propTypes = {
   navigatorRenderer: PropTypes.func,
   rangeColors: PropTypes.arrayOf(PropTypes.string),
   dragSelectionEnabled: PropTypes.bool,
+  focusedDate: PropTypes.object,
 };
 
 export default Calendar;

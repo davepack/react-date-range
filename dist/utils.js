@@ -44,7 +44,8 @@ function calcFocusDate(currentFocusedDate, props) {
       months = props.months,
       ranges = props.ranges,
       focusedRange = props.focusedRange,
-      displayMode = props.displayMode;
+      displayMode = props.displayMode,
+      focusedDate = props.focusedDate;
   // find primary date according the props
 
   var targetInterval = void 0;
@@ -62,7 +63,7 @@ function calcFocusDate(currentFocusedDate, props) {
   }
   targetInterval.start = (0, _startOfMonth2.default)(targetInterval.start || new Date());
   targetInterval.end = (0, _endOfMonth2.default)(targetInterval.end || targetInterval.start);
-  var targetDate = targetInterval.start || targetInterval.end || shownDate || new Date();
+  var targetDate = focusedDate || targetInterval.start || targetInterval.end || shownDate || new Date();
 
   // initial focus
   if (!currentFocusedDate) return shownDate || targetDate;

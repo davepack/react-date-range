@@ -9,7 +9,7 @@ import {
 } from 'date-fns2';
 
 export function calcFocusDate(currentFocusedDate, props) {
-  const { shownDate, date, months, ranges, focusedRange, displayMode } = props;
+  const { shownDate, date, months, ranges, focusedRange, displayMode, focusedDate } = props;
   // find primary date according the props
   let targetInterval;
   if (displayMode === 'dateRange') {
@@ -26,7 +26,7 @@ export function calcFocusDate(currentFocusedDate, props) {
   }
   targetInterval.start = startOfMonth(targetInterval.start || new Date());
   targetInterval.end = endOfMonth(targetInterval.end || targetInterval.start);
-  const targetDate = targetInterval.start || targetInterval.end || shownDate || new Date();
+  const targetDate = focusedDate || targetInterval.start || targetInterval.end || shownDate || new Date();
 
   // initial focus
   if (!currentFocusedDate) return shownDate || targetDate;

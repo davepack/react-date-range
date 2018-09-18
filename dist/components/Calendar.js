@@ -749,7 +749,8 @@ Calendar.propTypes = {
   direction: _propTypes2.default.oneOf(['vertical', 'horizontal']),
   navigatorRenderer: _propTypes2.default.func,
   rangeColors: _propTypes2.default.arrayOf(_propTypes2.default.string),
-  dragSelectionEnabled: _propTypes2.default.bool
+  dragSelectionEnabled: _propTypes2.default.bool,
+  focusedDate: _propTypes2.default.object
 };
 
 exports.default = Calendar;
